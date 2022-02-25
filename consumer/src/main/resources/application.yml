@@ -1,0 +1,19 @@
+spring:
+  kafka:
+    consumer:
+      group-id: "defaultconsumergroup"
+      enable-auto-commit: true
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      auto-offset-reset: latest
+      client-id: theconsumer
+      properties:
+        spring.json.trusted.packages: "*"
+    bootstrap-servers: localhost:29092
+#    properties.schema.registry.url: http://0.0.0.0:8085
+#    properties.specific.avro.reader: true
+
+#auto.create.topics.enable: true
+
+server:
+  port: 8081

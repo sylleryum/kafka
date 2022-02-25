@@ -1,0 +1,9 @@
+{
+  "type": "record",
+  "name": "EntityTest",
+  "namespace": "com.sylleryum.producer.entity",
+  "fields" : [
+    {"name": "name", "type": "string"},
+    {"name": "surname", "type": "string"}
+  ]
+}
